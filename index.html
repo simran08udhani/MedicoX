@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Image Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Medical Image Analyzer</h1>
+        <p>Upload CT Scans, MRI, and X-Ray images to analyze and get a diagnostic report.</p>
+    </header>
+
+    <div class="upload-section">
+        <h2>Upload Medical Images</h2>
+        <form id="image-upload-form">
+            <div class="upload-container">
+                <label for="ct-scan">Upload CT Scan:</label>
+                <input type="file" id="ct-scan" accept="image/*">
+            </div>
+            <div class="upload-container">
+                <label for="mri">Upload MRI:</label>
+                <input type="file" id="mri" accept="image/*">
+            </div>
+            <div class="upload-container">
+                <label for="x-ray">Upload X-Ray:</label>
+                <input type="file" id="x-ray" accept="image/*">
+            </div>
+            <button type="button" id="analyze-btn">Analyze Images</button>
+        </form>
+    </div>
+
+    <div class="result-section" id="result-section">
+        <h2>Analysis Results</h2>
+        <div id="result-container">
+            <!-- Analysis results will be displayed here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>Medical Image Analyzer &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
